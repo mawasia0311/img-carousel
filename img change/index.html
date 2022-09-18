@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    #mainImg{
+
+        height: 400px;
+        width: 400px;
+    }
+
+    .others{
+        height: 100px;
+        width: 100px;
+    }
+
+</style>
+
+<body>
+
+    <img src="musicplayer/paradise.jpeg" alt="" id="mainImg">
+
+    <div>
+        <img src="musicplayer/hymfortheweekend.jpeg" alt="" class="others" onclick="changeMain(this)">
+        <img src="musicplayer/download.jpeg" alt="" class="others" onclick="changeMain(this)">
+        <img src="musicplayer/123.jpeg" alt="" class="others" onclick="changeMain(this)">
+    </div>
+
+
+    <script>
+
+        function changeMain(event){
+            document.getElementById("mainImg").src = event.src;
+        }
+        
+
+    </script>
+</body>
+</html>
